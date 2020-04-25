@@ -7,13 +7,34 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>discovery-service</module>
-		<module>config-service</module>
-		<!--<module>employee-service</module>
-		<module>department-service</module>
-		<module>organization-service</module>-->
-		<module>gateway-service</module>
-		<module>proxy-service</module>
+		<module>bm-admin</module>
+		<module>bm-discovery-service</module>
+		<module>bm-config-service</module>
+		<module>bm-domain-employee-service</module>
+		<module>bm-domain-department-service</module>
+		<module>bm-domain-org-service</module>
+		<module>bm-domain-keycloak-service</module>
+		<module>bm-template-service</module>
+		<module>bm-gateway-service</module>
+		<module>bm-proxy-service</module>
 	</modules>
-	
+
+	<properties>
+		<wiremock.version>2.26.1</wiremock.version>
+		<hazelcast-tests.version>3.12.6</hazelcast-tests.version>
+		<spring.boot.admin.version>2.2.1</spring.boot.admin.version>
+
+		<cxf.version>3.2.7</cxf.version>
+		<fluent-hc.version>4.5.6</fluent-hc.version>
+		<camunda.version>7.10.0</camunda.version>
+		<commons-io.version>2.6</commons-io.version>
+		<system-rules.version>1.19.0</system-rules.version>
+
+		<springfox-version>3.0.0-SNAPSHOT</springfox-version>
+
+		<slf4j.version>1.7.26</slf4j.version>
+		<logstash-logback.version>5.3</logstash-logback.version>
+
+	</properties>
+
 </project>
